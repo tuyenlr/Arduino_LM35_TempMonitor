@@ -1,10 +1,10 @@
 // Khai báo mảng chứa chân cảm biến
-const int sensorPins[2] = {A0, A1, A5};
+const int sensorPins[2] = {A0, A1};
 // Mảng lưu giá trị ADC
 int adcValues[2];
 
 void setup() {
-  Serial.begin(Hello wordksfm); // Khởi động Serial
+  Serial.begin(115200); // Khởi động Serial
 }
 
 void loop() {
