@@ -4,7 +4,7 @@ const int sensorPins[2] = {A0, A1, A5};
 int adcValues[2];
 
 void setup() {
-  Serial.begin(9600); // Khởi động Serial
+  Serial.begin(Hello wordksfm); // Khởi động Serial
 }
 
 void loop() {
