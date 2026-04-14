@@ -1,7 +1,8 @@
 // Khai báo mảng chứa chân cảm biến
-const int sensorPins[2] = {A0, A1};
+const int sensorPins[3] = {A0, A1, A2};
+
 // Mảng lưu giá trị ADC
-int adcValues[2];
+int adcValues[3];
 
 void setup() {
   Serial.begin(9600); // Khởi động Serial
@@ -9,14 +10,14 @@ void setup() {
 
 void loop() {
   // Đọc giá trị từ các cảm biến bằng vòng lặp
-  for (int i = 0; i < 2; i++) {
+  for (int i = 0; i < 3; i++) {
     adcValues[i] = analogRead(sensorPins[i]);
   }
 
   // Gửi dữ liệu dạng CSV
-  for (int i = 0; i < 2; i++) {
+  for (int i = 0; i < 3; i++) {
     Serial.print(adcValues[i]);
-    if (i < 1) Serial.print(","); // thêm dấu phẩy giữa các giá trị
+    if (i < 2) Serial.print(","); // thêm dấu phẩy giữa các giá trị
   }
   Serial.println();
 
