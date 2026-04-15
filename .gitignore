@@ -1,17 +1,27 @@
-# Arduino
+# --- Arduino & Firmware ---
 *.elf
 *.hex
 build/
 
-# IDE
-.vscode/
-*.suo
-
-# Proteus
-*.pdsbak
-
-# C# Build
+# --- C# / .NET (pc_app) ---
 [Bb]in/
 [Oo]bj/
 *.exe
 *.dll
+*.suo
+*.user
+
+# --- Proteus (simulation) ---
+*.pdsbak
+*.workspace
+*.pdsbak.*
+Last\ Loaded\ *.pdsbak
+
+# --- IDE & OS ---
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Temporary/Draft files ---
+graph.txt
+baitap.txt
