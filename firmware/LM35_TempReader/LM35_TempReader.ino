@@ -5,7 +5,7 @@ const int sensorPins[3] = {A0, A1, A2};
 int adcValues[3];
 
 void setup() {
-  Serial.begin(9600); // Khởi động Serial
+  Serial.begin(115200); // Khởi động Serial
 }
 
 void loop() {
